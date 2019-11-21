@@ -8,8 +8,13 @@ require __DIR__ . '/vendor/autoload.php';
 
 $app = AppFactory::create();
 
-$app->get('/', function (Request $request, Response $response, $args) {
-    $response->getBody()->write('Hello world!');
+$app->get('/cbor', function (Request $request, Response $response, $args) {
+    $response->getBody()->write('Hello CBOR!');
+    return $response;
+});
+
+$app->get('/json', function (Request $request, Response $response, $args) {
+    $response->getBody()->write('Hello JSON!');
 
     return $response;
 });
