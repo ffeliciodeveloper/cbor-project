@@ -1,0 +1,16 @@
+{
+    "name": "root/cbor-project",
+    "description": "Projeto para teste do CBOR",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Fernando",
+            "email": "fernando_felicio82@yahoo.com.br"
+        }
+    ],
+    "require": {
+        "slim/slim": "^4.0",
+        "slim/psr7": "^0.6.0",
+        "2tvenom/cborencode": "^1.0"
+    }
+}
