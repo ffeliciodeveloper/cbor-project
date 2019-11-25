@@ -10,7 +10,6 @@ use CBOR\CBOREncoder;
 $app = AppFactory::create();
 
 $app->get('/cbor', function (Request $request, Response $response, $args) {
-    //target for encode
     $target = [
         [2 => ['c' => true]],
         [3 => ['p' => 10]],
