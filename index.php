@@ -21,7 +21,6 @@ $app->get('/cbor', function (Request $request, Response $response, $args) {
     //encoded string
     $encoded_data = CBOREncoder::encode($target);
 
-    //debug info output
     $byte_arr = unpack('C*', $encoded_data);
     $dechex = implode(' ', array_map(function ($byte) {
         $dechex = dechex($byte);
