@@ -9,7 +9,7 @@ use CBOR\CBOREncoder;
 
 $app = AppFactory::create();
 
-$app->get('/cbor', function (Request $request, Response $response, $args) {
+$app->get('/', function (Request $request, Response $response, $args) {
     $target = [
         [2 => ['c' => true]],
         [3 => ['p' => 10]],
